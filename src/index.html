@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,14 +6,98 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Dia</title>
+    <title>Air</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="./styles/main.scss"
     />
   </head>
   <body>
-    <h1>Dia</h1>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav nav">
+          <img
+            class="nav__logo"
+            src="images/logo/Air-logo.svg"
+            alt="logo Ari"
+          />
+          <div class="nav__menu"></div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="#"
+              >
+                About us
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="#"
+              >
+                Services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="#"
+              >
+                Work
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="#"
+              >
+                Contact Us
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="#"
+              >
+                Hire us
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__agency agency">
+          <h1 class="agency__title">Strategic Agency</h1>
+          <p class="agency__p">
+            We believe in the power of bold ideas that can solve business
+            challenges.
+          </p>
+          <button class="agency__btn btn btn--hover">Learn more</button>
+        </div>
+        <div class="header__slider">
+          <div>
+            <img
+              class="header__img"
+              src="images/slider/Slider-Photo-large.png"
+              alt="Slider foto"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
     <script src="scripts/main.js"></script>
   </body>
 </html>

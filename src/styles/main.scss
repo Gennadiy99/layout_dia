@@ -1,7 +1,79 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
+@import 'utils/_mixins';
+@import 'block.style/header';
+@import 'block.style/container';
+@import 'block.style/nav';
+@import 'block.style/agency';
+
+// * {border: solid 1px red};
 
 body {
+  margin: 0;
+  padding: 0;
   background: $c-gray;
+
+  font-family: Poppins, serif;
+  font-weight: 600;
+  font-style: normal;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.btn {
+  box-sizing: border-box;
+  height: 50px;
+  background: #2060f6;
+  color: $color-text-hed;
+  border-radius: 8px;
+
+  font-family: Poppins, serif;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+
+  &--hover:hover {
+    background-color: #043096;
+    box-shadow: 0 0 10px 7px #494949;
+  }
+}
+
+// .poppins-regular {
+//   font-family: "Poppins", serif;
+//   font-weight: 400;
+//   font-style: normal;
+// }
+// .poppins-medium {
+//   font-family: "Poppins", serif;
+//   font-weight: 500;
+//   font-style: normal;
+// }
+// .poppins-semibold {
+//   font-family: "Poppins", serif;
+//   font-weight: 600;
+//   font-style: normal;
+// }
+// .poppins-bold {
+//   font-family: "Poppins", serif;
+//   font-weight: 700;
+//   font-style: normal;
+// }
