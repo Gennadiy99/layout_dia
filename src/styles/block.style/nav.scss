@@ -6,9 +6,13 @@
   @include mobile-screens {
     padding-top: 20px;
   }
-  
+
   @include small-screens {
     padding-top: 49px;
+  }
+
+  &__block-logo {
+    display: flex;
   }
 
   &__logo {
@@ -16,25 +20,25 @@
     height: 26px;
   }
 
-  &__menu {
+  &__link-menu {
+    margin-left: 32px;
+
+    @include small-screens {
+      display: none;
+    }
+  }
+
+  &__menu-img {
     width: 24px;
     height: 24px;
-    margin-left: 32px;
     background-image: url(../images/Menu-header.png);
   }
 
   &__list {
     list-style: none;
-    padding: 0;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 150%;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-
     display: grid;
-    justify-items: center;
     grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
     gap: 48px;
 
     @include mobile-screens {
@@ -43,11 +47,17 @@
 
     @include small-screens {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 
   &__link {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
     text-decoration: none;
     color: $color-text-hed;
   }
