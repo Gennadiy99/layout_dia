@@ -7,6 +7,9 @@
 @import 'block.style/nav';
 @import 'block.style/agency';
 @import 'block.style/sidebar';
+@import 'block.style/slider';
+@import 'block.style/who-we-are';
+@import 'block.style/expertise';
 
 // * {border: solid 1px red};
 
@@ -48,14 +51,20 @@ li {
   font-weight: 600;
   font-size: 15px;
   text-align: center;
-  cursor: pointer;
   border: none;
   transition: all 0.3s;
 
-  &--hover:hover {
-    background-color: #043096;
-    box-shadow: 0 0 10px 7px #494949;
+  &--hover {
+    @include hover(background-color #043096, box-shadow (0 0 10px 7px #494949));
   }
+}
+
+.hedden {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 // .poppins-regular {
@@ -77,4 +86,16 @@ li {
 //   font-family: "Poppins", serif;
 //   font-weight: 700;
 //   font-style: normal;
+// }
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+// .open-sans-<uniquifier> {
+//   font-family: "Open Sans", serif;
+//   font-weight: <weight>;
+//   font-style: normal;
+//   font-optical-sizing: auto;
+//   font-variation-settings:
+//     "wdth" 100;
 // }

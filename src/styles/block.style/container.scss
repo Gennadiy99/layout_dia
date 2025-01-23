@@ -33,10 +33,10 @@
   }
 
   // Дизайн 1600
-  // @include designScreens {
-  //   width: 1600px;
-  //   padding-inline: 225px;
-  // }
+  @include design-screens {
+    width: 1600px;
+    padding-inline: 225px;
+  }
 
   // min 2560
 

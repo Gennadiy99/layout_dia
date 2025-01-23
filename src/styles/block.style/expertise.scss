@@ -1,0 +1,83 @@
+.expertise {
+  margin-top: 120px;
+}
+
+.expert {
+  display: grid;
+
+  @include mobile-screens {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 56px;
+    column-gap: 20px;
+  }
+
+  @include tablet-screens {
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 72px;
+    column-gap: 41px;
+  }
+  @include small-screens {
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 72px;
+    column-gap: 41px;
+  }
+
+  &__title {
+    grid-column: span 2;
+    font-size: 44px;
+    line-height: 120%;
+    text-align: center;
+    color: $color-text-title;
+    padding-top: 72px;
+
+    @include tablet-screens {
+      grid-column: 2 / span 4;
+      padding-top: 128px;
+    }
+    @include small-screens {
+      grid-column: 4 / span 6;
+    }
+  }
+
+  &__card {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet-screens {
+      grid-column: 2 / span 4;
+    }
+    @include small-screens {
+      grid-column: span 4;
+    }
+  }
+}
+
+.card {
+  &__img {
+    margin-bottom: 32px;
+    border-radius: 20px;
+
+    @include small-screens {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: $color-text-title;
+  }
+
+  &__p {
+    font-family: 'Open Sans', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: $color-text-p;
+  }
+}
