@@ -10,8 +10,17 @@
 @import 'block.style/slider';
 @import 'block.style/who-we-are';
 @import 'block.style/expertise';
+@import 'block.style/services';
+@import 'block.style/testimonials';
+@import 'block.style/vision';
+@import 'block.style/footer';
+@import 'block.style/nav-foot';
 
 // * {border: solid 1px red};
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -65,6 +74,10 @@ li {
 
 .show {
   display: block;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 // .poppins-regular {

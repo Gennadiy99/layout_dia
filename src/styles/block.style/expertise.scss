@@ -1,5 +1,15 @@
 .expertise {
   margin-top: 120px;
+  border-radius: 30px;
+  background-color: #fff;
+
+  @include tablet-screens {
+    margin-top: 166px;
+  }
+
+  @include small-screens {
+    margin-top: 148px;
+  }
 }
 
 .expert {
@@ -7,19 +17,20 @@
 
   @include mobile-screens {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 56px;
-    column-gap: 20px;
+    gap: 56px 20px;
   }
 
   @include tablet-screens {
     grid-template-columns: repeat(6, 1fr);
-    row-gap: 72px;
-    column-gap: 41px;
+    gap: 72px 31px;
   }
+
   @include small-screens {
     grid-template-columns: repeat(12, 1fr);
-    row-gap: 72px;
-    column-gap: 41px;
+  }
+
+  @include desktop-screens {
+    // gap: 72px 31px;
   }
 
   &__title {
@@ -34,6 +45,7 @@
       grid-column: 2 / span 4;
       padding-top: 128px;
     }
+
     @include small-screens {
       grid-column: 4 / span 6;
     }
@@ -48,16 +60,37 @@
     @include tablet-screens {
       grid-column: 2 / span 4;
     }
+
+    // @include small-screens {
+    //   grid-column: span 4;
+    // }
+  }
+
+  &__card:nth-child(2) {
     @include small-screens {
-      grid-column: span 4;
+      grid-column: 1 / span 3;
+    }
+  }
+
+  &__card:nth-child(3) {
+    @include small-screens {
+      grid-column: 5 / span 4;
+    }
+  }
+
+  &__card:nth-child(4) {
+    @include small-screens {
+      grid-column: 10 / span 3;
     }
   }
 }
 
-.card {
+.card-x {
   &__img {
     margin-bottom: 32px;
     border-radius: 20px;
+
+    @include hover(transform scale(1.2), box-shadow (0 0 15px 10px #848282));
 
     @include small-screens {
       margin-bottom: 40px;

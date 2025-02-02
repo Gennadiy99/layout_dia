@@ -24,6 +24,15 @@
       rel="stylesheet"
       href="./styles/main.scss"
     />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="images/logo/Air-logo.svg"
+    />
+    <script
+      src="styles/index.js"
+      defer
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -46,7 +55,7 @@
             <li class="nav__item">
               <a
                 class="nav__link"
-                href="#"
+                href="#about"
               >
                 About us
               </a>
@@ -54,7 +63,7 @@
             <li class="nav__item">
               <a
                 class="nav__link"
-                href="#"
+                href="#services"
               >
                 Services
               </a>
@@ -70,7 +79,7 @@
             <li class="nav__item">
               <a
                 class="nav__link"
-                href="#"
+                href="#footer"
               >
                 Contact Us
               </a>
@@ -92,7 +101,14 @@
             We believe in the power of bold ideas that can solve business
             challenges.
           </p>
-          <button class="agency__btn btn btn--hover">Learn more</button>
+          <button class="agency__btn btn btn--hover">
+            <a
+              href="#expertise"
+              class="agency__link-btn"
+            >
+              Learn more
+            </a>
+          </button>
         </div>
         <div class="header__slider slider">
           <img
@@ -129,7 +145,7 @@
           <li class="sidebar__item">
             <a
               class="sidebar__link"
-              href="#"
+              href="#about"
             >
               About us
             </a>
@@ -137,7 +153,7 @@
           <li class="sidebar__item">
             <a
               class="sidebar__link"
-              href="#"
+              href="#services"
             >
               Services
             </a>
@@ -153,7 +169,7 @@
           <li class="sidebar__item">
             <a
               class="sidebar__link"
-              href="#"
+              href="#contacts"
             >
               Contact Us
             </a>
@@ -167,7 +183,10 @@
         </a>
       </aside>
     </header>
-    <section class="who-we-are">
+    <section
+      class="who-we-are"
+      id="about"
+    >
       <div class="container">
         <div class="who-we-are__content">
           <h2 class="who-we-are__title">Who we are</h2>
@@ -180,47 +199,350 @@
         </div>
       </div>
     </section>
-    <section class="expertise">
+    <section
+      class="expertise"
+      id="expertise"
+    >
       <div class="container">
         <div class="expert">
           <h2 class="expert__title">Our expertise</h2>
-          <div class="expert__card card">
+          <div class="expert__card card-x">
             <img
-              class="card__img"
+              class="card-x__img"
               src="images/Our-expertise/expertise-image 1.png"
               alt="img"
             />
-            <h3 class="card__title">Branding</h3>
-            <p class="card__p">
+            <h3 class="card-x__title">Branding</h3>
+            <p class="card-x__p">
               We create additional value for companies, products, services as
               well as verbal and visual ways to deliver it to the audience.
             </p>
           </div>
-          <div class="expert__card card">
+          <div class="expert__card card-x">
             <img
-              class="card__img"
+              class="card-x__img"
               src="images/Our-expertise/expertise-image 2.png"
               alt="img"
             />
-            <h3 class="card__title">Communication</h3>
-            <p class="card__p">
+            <h3 class="card-x__title">Communication</h3>
+            <p class="card-x__p">
               We strive to create communications that can increase media
               performance. We use everything — words, meanings, stories, art,
               movies.
             </p>
           </div>
-          <div class="expert__card card">
+          <div class="expert__card card-x">
             <img
-              class="card__img"
+              class="card-x__img"
               src="images/Our-expertise/expertise-image 3.png"
               alt="img"
             />
-            <h3 class="card__title">Strategy</h3>
-            <p class="card__p">
+            <h3 class="card-x__title">Strategy</h3>
+            <p class="card-x__p">
               We create business growth strategies, from the moment of its birth
               to the achievement of the necessary business indicators.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="services"
+      id="services"
+    >
+      <div class="container">
+        <div class="services__content">
+          <div class="services__card description">
+            <h3 class="services__title3">Services</h3>
+            <h2 class="services__title2">
+              Air is a full service creative agency
+            </h2>
+            <p class="services__p">
+              Deep analytics, strong strategy and bright creative ideas.
+            </p>
+            <br />
+            <p class="services__p">
+              We are sure that first-rate job is possible only if all three
+              components are united.
+            </p>
+          </div>
+
+          <div class="services__card card">
+            <div class="card__number">001</div>
+            <p class="card__p">
+              Brand Development Copywriting Logo & Webite Design Packaging
+            </p>
+            <div class="card__block">
+              <a href="#">
+                <div class="icon-arrow">
+                  <div class="icon-arrow__arrow"></div>
+                </div>
+              </a>
+              <h3 class="card__title3">Learn more</h3>
+            </div>
+          </div>
+
+          <div class="services__card card">
+            <div class="card__number">002</div>
+            <p class="card__p">
+              Сontent Production Graphic Design Video Production Post Production
+            </p>
+            <div class="card__block">
+              <a href="#">
+                <div class="icon-arrow">
+                  <div class="icon-arrow__arrow"></div>
+                </div>
+              </a>
+              <h3 class="card__title3">Learn more</h3>
+            </div>
+          </div>
+
+          <div class="services__card card">
+            <div class="card__number">003</div>
+            <p class="card__p">
+              Marketing Strategy Email Marketing Paid Advertising Blog Content &
+              SEO
+            </p>
+            <div class="card__block">
+              <a href="#">
+                <div class="icon-arrow">
+                  <div class="icon-arrow__arrow"></div>
+                </div>
+              </a>
+              <h3 class="card__title3">Learn more</h3>
+            </div>
+          </div>
+
+          <div class="services__card card">
+            <div class="card__number">004</div>
+            <p class="card__p">
+              Digital Communications Influencer Marketing Product Placements
+              Strategic Partnerships
+            </p>
+            <div class="card__block">
+              <a href="#">
+                <div class="icon-arrow">
+                  <div class="icon-arrow__arrow"></div>
+                </div>
+              </a>
+              <h3 class="card__title3">Learn more</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonials__content">
+          <div class="testimonials__item">
+            <h3 class="testimonials__h3">Testimonials</h3>
+            <h2 class="testimonials__h2">What people say</h2>
+          </div>
+
+          <div class="testimonials__item card-test">
+            <img
+              class="card-test__img"
+              src="images/testimonials/test-card-photo-1.png"
+              alt="photo user"
+            />
+            <div class="card-test__icon"></div>
+            <p class="card-test__p">
+              AIR’s ideas are refreshing and out of the box. Authentic team that
+              focuses on the important path of the brand.
+            </p>
+            <h4 class="card-test__h4">Tal Gilad</h4>
+            <h3 class="card-test__h3">Teach for America</h3>
+          </div>
+          <div class="testimonials__item card-test">
+            <img
+              class="card-test__img"
+              src="images/testimonials/test-card-photo-2.png"
+              alt="photo user"
+            />
+            <div class="card-test__icon"></div>
+            <p class="card-test__p">
+              AIR is an exceptional agency that leads with creative talent,
+              first-class account servicing.
+            </p>
+            <h4 class="card-test__h4">Azadeh Hawkins</h4>
+            <h3 class="card-test__h3">Hawkins Consulting</h3>
+          </div>
+          <div class="testimonials__item card-test">
+            <img
+              class="card-test__img"
+              src="images/testimonials/test-card-photo-3.png"
+              alt="photo user"
+            />
+            <div class="card-test__icon"></div>
+            <p class="card-test__p">
+              AIR raises the agency bar to stratospheric heights on both
+              creative output and client service.
+            </p>
+            <h4 class="card-test__h4">Michel Grover</h4>
+            <h3 class="card-test__h3">Hulu</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="vision">
+      <div class="container">
+        <div class="vision__content">
+          <h2 class="vision__h2">Vision, Passion, Results</h2>
+          <p class="vision__p">
+            We are sure that first-rate job is possible only if all three
+            components are united.
+          </p>
+          <button class="btn btn--hover vision__btn">
+            <a
+              href="#message"
+              class="vision__link-btn"
+            >
+              Apply
+            </a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      class="footer"
+      id="footer"
+    >
+      <div class="container">
+        <div class="footer__content">
+          <div
+            class="footer__message"
+            id="message"
+          >
+            <form
+              action="#"
+              class="form-foot"
+              name="footer-form"
+            >
+              <legend>Send us a message</legend>
+              <input
+                type="email"
+                placeholder="email@exa"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Your name"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Your message"
+                required
+              />
+              <button
+                class="btn btn--hover form-foot__btn"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+          <div
+            class="footer__contacts contact"
+            id="contacts"
+          >
+            <h2 class="contact__h2">Contact us</h2>
+
+            <div class="contact__block">
+              <p class="contact__p">Call us</p>
+              <a
+                class="contact__link contact__link--hover"
+                href="tel:654321987"
+                target="_blank"
+              >
+                654 321 987
+              </a>
+            </div>
+
+            <div class="contact__block">
+              <p class="contact__p">Visit us</p>
+              <a
+                class="contact__link contact__link--hover"
+                href="https://maps.app.goo.gl/v3HAeARN9hwYNkfv9"
+                target="_blank"
+              >
+                2905 West Drive, Buffalo Grove
+              </a>
+            </div>
+
+            <div class="contact__block">
+              <p class="contact__p">our socials</p>
+              <div class="contact__wrapper-icon">
+                <a
+                  class="contact__link link-fb"
+                  href="#"
+                  target="_blank"
+                ></a>
+                <a
+                  class="contact__link link-twitter"
+                  href="#"
+                  target="_blank"
+                ></a>
+                <a
+                  class="contact__link link-instag"
+                  href="#"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <nav class="footer__nav nav-foot">
+            <div class="nav-foot__block-logo">
+              <img
+                class="nav-foot__logo"
+                src="images/logo/Air-logo.svg"
+                alt="logo Ari"
+              />
+            </div>
+            <ul class="nav-foot__list">
+              <li class="nav-foot__item">
+                <a
+                  class="nav-foot__link"
+                  href="#about"
+                >
+                  About us
+                </a>
+              </li>
+              <li class="nav-foot__item">
+                <a
+                  class="nav-foot__link"
+                  href="#"
+                >
+                  Home
+                </a>
+              </li>
+              <li class="nav-foot__item">
+                <a
+                  class="nav-foot__link"
+                  href="#services"
+                >
+                  Services
+                </a>
+              </li>
+              <li class="nav-foot__item">
+                <a
+                  class="nav-foot__link"
+                  href="#"
+                >
+                  Work
+                </a>
+              </li>
+              <li class="nav-foot__item">
+                <a
+                  class="nav-foot__link"
+                  href="#"
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </section>
