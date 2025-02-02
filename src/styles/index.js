@@ -7,8 +7,14 @@ menuSideLink.addEventListener('click', () => {
   document.body.classList.toggle('no-scroll');
 });
 
-linkSidebar.forEach(link => {
+linkSidebar.forEach((link) => {
   link.addEventListener('click', () => {
     document.body.classList.toggle('no-scroll');
   });
+});
+
+// очистка формы
+
+document.querySelector('.form-foot').addEventListener('submit', function () {
+  setTimeout(() => this.reset(), 1000);
 });
