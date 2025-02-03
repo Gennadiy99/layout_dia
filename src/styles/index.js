@@ -15,6 +15,9 @@ linkSidebar.forEach((link) => {
 
 // очистка формы
 
-document.querySelector('.form-foot').addEventListener('submit', function () {
-  setTimeout(() => this.reset(), 1000);
-});
+document
+  .querySelector('.form-foot')
+  .addEventListener('submit', function (event) {
+    event.preventDefault();
+    setTimeout(() => this.reset(), 1000);
+  });
