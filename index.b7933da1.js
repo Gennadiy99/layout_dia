@@ -1,0 +1,2 @@
+const e=document.querySelector(".nav__link-menu"),o=document.querySelectorAll(".sidebar a");console.log(o),e.addEventListener("click",()=>{console.log("Click"),document.body.classList.toggle("no-scroll")}),o.forEach(e=>{e.addEventListener("click",()=>{document.body.classList.toggle("no-scroll")})}),document.querySelector(".form-foot").addEventListener("submit",function(e){e.preventDefault(),setTimeout(()=>this.reset(),1e3)});
+//# sourceMappingURL=index.b7933da1.js.map
